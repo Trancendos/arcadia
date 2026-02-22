@@ -12,7 +12,8 @@
     "audit:cve": "pnpm audit --audit-level=moderate",
     "audit:deps": "pnpm audit --prod",
     "check:n-1": "node scripts/check-n-minus-one.mjs",
-    "audit:repos": "node scripts/repo-governance-audit.mjs"
+    "audit:repos": "node scripts/repo-governance-audit.mjs",
+    "audit:deep": "node scripts/portfolio-deep-security-scan.mjs"
   },
   "author": "Trancendos",
   "license": "MIT",

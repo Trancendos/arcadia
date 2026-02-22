@@ -160,3 +160,53 @@ Exit criteria:
   - resolve N-0/N-1 exceptions
 - Quarterly:
   - modular architecture fitness review (merge/separate decisions, integration drift)
+
+## 9) Deep Scan Execution Update (Completed)
+
+Deep code-level and repository-content scan completed via:
+- `reports/portfolio-deep-security-scan.json`
+- `reports/portfolio-deep-security-scan.md`
+- `reports/portfolio-remediation-backlog.csv`
+
+Portfolio deep-scan baseline:
+- Repositories assessed: **95**
+- Potential committed secret/key files: **1**
+- Repositories with unpinned GitHub Actions: **36**
+- Repositories with wildcard/unpinned dependency specs: **13**
+- Repositories missing lockfiles: **49**
+- Repositories with Docker root-user risk: **16**
+- Repositories without detected tests: **67**
+- Repositories with governance gaps: **94**
+
+Highest-priority (risk score >= 40):
+- `opencode`
+- `secrets-portal`
+- `qodo-cover`
+- `norman-ai`
+- `dependabot-core`
+- `qodo-ci-example`
+- `uv-docker-example`
+- `agent-starter-pack`
+- `scale-institutional-knowledge-using-copilot-spaces`
+
+## 10) Action Plan Completion Check (Post-Deep-Scan)
+
+### Completed
+- Governance baseline audit automation (org-wide).
+- Deep static portfolio security scanning automation (org-wide).
+- Remediation backlog generation (CSV + markdown reports).
+- Arcadia local security, CVE, N-0/N-1, and test baseline implementation.
+
+### Not Yet Completed
+- Bulk rollout of baseline controls to all active repositories.
+- SHA pinning for actions in all repositories.
+- Lockfile normalization for all package-manager roots.
+- Test baseline rollout to placeholder/skeleton repos.
+- Secret hygiene cleanup and credential rotation for flagged repositories.
+
+### Merge/Separate Recommendation (refined by deep scan)
+- Keep `shared-core`, `infrastructure`, integration hubs, and product apps as separate modules.
+- Consolidate or archive low-value skeleton repos with no tests + repeated scaffolding.
+- For `the-*` and `*-ai` families:
+  - if no unique business logic and identical scaffolding, merge by domain family;
+  - if unique behavior exists, keep separate but enforce identical baseline templates and integration contracts.

@@ -27,9 +27,11 @@ pnpm dev
 pnpm run audit:cve
 pnpm run check:n-1
 pnpm run audit:repos -- --owner Trancendos --limit 200
+pnpm run audit:deep -- --owner Trancendos --limit 200
 ```
 
 - CVE scanning and compliance workflows are configured under `.github/workflows/`.
+- Portfolio-wide governance and deep-scan artifacts are generated under `reports/`.
 - Dependency update automation is configured via `.github/dependabot.yml`.
 - Security response policy is documented in `SECURITY.md`.
 
