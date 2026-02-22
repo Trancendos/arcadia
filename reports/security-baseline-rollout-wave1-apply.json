@@ -1,0 +1,422 @@
+{
+  "summary": {
+    "generatedAt": "2026-02-22T19:24:19.445Z",
+    "owner": "Trancendos",
+    "minRiskScore": 30,
+    "includeForks": false,
+    "dryRun": false,
+    "branchName": "security/baseline-hardening-20260222",
+    "targetedRepositories": 20,
+    "applied": 0,
+    "dryRunCount": 0,
+    "noChangesNeeded": 0,
+    "permissionDenied": 20,
+    "failed": 0
+  },
+  "actionRefs": {
+    "checkout": "34e114876b0b11c390a56381ad16ebd13914f8d5",
+    "dependencyReview": "05fe4576374b728f0c523d6a13d64c25081e0803",
+    "trivy": "76071ef0d7ec797419534a183b498b4d6366cf37"
+  },
+  "results": [
+    {
+      "repository": "secrets-portal",
+      "riskScore": 52,
+      "isFork": false,
+      "stack": [
+        "node",
+        "jvm"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        ".github/CODEOWNERS",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "permission_denied",
+      "reason": "gh api repos/Trancendos/secrets-portal/git/refs -X POST -f ref=refs/heads/security/baseline-hardening-20260222 -f sha=766c74466403182962cfd250d0d273c6d733bf52 failed: gh: Resource not accessible by integration (HTTP 403)"
+    },
+    {
+      "repository": "the-treasury",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "permission_denied",
+      "reason": "gh api repos/Trancendos/the-treasury/git/refs -X POST -f ref=refs/heads/security/baseline-hardening-20260222 -f sha=a155487c54932c659095265ed28566f0c4fed1cd failed: gh: Resource not accessible by integration (HTTP 403)"
+    },
+    {
+      "repository": "the-sanctuary",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "permission_denied",
+      "reason": "gh api repos/Trancendos/the-sanctuary/git/refs -X POST -f ref=refs/heads/security/baseline-hardening-20260222 -f sha=9813c6f18c883611da49ae44992af5b17af1cabc failed: gh: Resource not accessible by integration (HTTP 403)"
+    },
+    {
+      "repository": "the-observatory",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "permission_denied",
+      "reason": "gh api repos/Trancendos/the-observatory/git/refs -X POST -f ref=refs/heads/security/baseline-hardening-20260222 -f sha=c6cb664b240e128f25926a7cfdee84db2db522e3 failed: gh: Resource not accessible by integration (HTTP 403)"
+    },
+    {
+      "repository": "the-nexus",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "permission_denied",
+      "reason": "gh api repos/Trancendos/the-nexus/git/refs -X POST -f ref=refs/heads/security/baseline-hardening-20260222 -f sha=be25bd5a855675caebf283743d0f983b4733cb8e failed: gh: Resource not accessible by integration (HTTP 403)"
+    },
+    {
+      "repository": "the-lighthouse",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "permission_denied",
+      "reason": "gh api repos/Trancendos/the-lighthouse/git/refs -X POST -f ref=refs/heads/security/baseline-hardening-20260222 -f sha=70a247fec8d02da3a3bbafeaf44df3934961a73d failed: gh: Resource not accessible by integration (HTTP 403)"
+    },
+    {
+      "repository": "the-library",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "permission_denied",
+      "reason": "gh api repos/Trancendos/the-library/git/refs -X POST -f ref=refs/heads/security/baseline-hardening-20260222 -f sha=ce6e0304f7e4351c5538289d703bf286b36a27da failed: gh: Resource not accessible by integration (HTTP 403)"
+    },
+    {
+      "repository": "the-ice-box",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "permission_denied",
+      "reason": "gh api repos/Trancendos/the-ice-box/git/refs -X POST -f ref=refs/heads/security/baseline-hardening-20260222 -f sha=16868ba55c80619e3770c987f8e1f604f43b8884 failed: gh: Resource not accessible by integration (HTTP 403)"
+    },
+    {
+      "repository": "the-hive",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "permission_denied",
+      "reason": "gh api repos/Trancendos/the-hive/git/refs -X POST -f ref=refs/heads/security/baseline-hardening-20260222 -f sha=13bc9e8a73f3f661b9d22019d6c27e9d4e757ab1 failed: gh: Resource not accessible by integration (HTTP 403)"
+    },
+    {
+      "repository": "the-foundation",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "permission_denied",
+      "reason": "gh api repos/Trancendos/the-foundation/git/refs -X POST -f ref=refs/heads/security/baseline-hardening-20260222 -f sha=56a4c4f9b904294c9b5912cdddfddcac11e64ec2 failed: gh: Resource not accessible by integration (HTTP 403)"
+    },
+    {
+      "repository": "the-forge",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "permission_denied",
+      "reason": "gh api repos/Trancendos/the-forge/git/refs -X POST -f ref=refs/heads/security/baseline-hardening-20260222 -f sha=2aff7d12da9a1418a56afaab7d0f57c39e2a3829 failed: gh: Resource not accessible by integration (HTTP 403)"
+    },
+    {
+      "repository": "the-dr-ai",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "permission_denied",
+      "reason": "gh api repos/Trancendos/the-dr-ai/git/refs -X POST -f ref=refs/heads/security/baseline-hardening-20260222 -f sha=009894a20fe9bc82bb1379a8f7bfcdd65c8013c9 failed: gh: Resource not accessible by integration (HTTP 403)"
+    },
+    {
+      "repository": "the-cryptex",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "permission_denied",
+      "reason": "gh api repos/Trancendos/the-cryptex/git/refs -X POST -f ref=refs/heads/security/baseline-hardening-20260222 -f sha=2b4886aad15ad0b444cac631960dfc305e5a26a4 failed: gh: Resource not accessible by integration (HTTP 403)"
+    },
+    {
+      "repository": "the-citadel",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "permission_denied",
+      "reason": "gh api repos/Trancendos/the-citadel/git/refs -X POST -f ref=refs/heads/security/baseline-hardening-20260222 -f sha=4ad43e5e1cf12ddb865fcd146929a903d25a4203 failed: gh: Resource not accessible by integration (HTTP 403)"
+    },
+    {
+      "repository": "the-agora",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "permission_denied",
+      "reason": "gh api repos/Trancendos/the-agora/git/refs -X POST -f ref=refs/heads/security/baseline-hardening-20260222 -f sha=21cb131cdab5c6b2fcbcc1b0b03b676eb27bd883 failed: gh: Resource not accessible by integration (HTTP 403)"
+    },
+    {
+      "repository": "solarscene-ai",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "permission_denied",
+      "reason": "gh api repos/Trancendos/solarscene-ai/git/refs -X POST -f ref=refs/heads/security/baseline-hardening-20260222 -f sha=46ec57e929a6ea649921f9f8b9da120774468d3a failed: gh: Resource not accessible by integration (HTTP 403)"
+    },
+    {
+      "repository": "shared-core",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "permission_denied",
+      "reason": "gh api repos/Trancendos/shared-core/git/refs -X POST -f ref=refs/heads/security/baseline-hardening-20260222 -f sha=a53897f9cffbd0c2f81219c57b763257cc2ea82e failed: gh: Resource not accessible by integration (HTTP 403)"
+    },
+    {
+      "repository": "serenity-ai",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "permission_denied",
+      "reason": "gh api repos/Trancendos/serenity-ai/git/refs -X POST -f ref=refs/heads/security/baseline-hardening-20260222 -f sha=e64947a1c3b48649ae3b514e6e4f0b1ef281a6d1 failed: gh: Resource not accessible by integration (HTTP 403)"
+    },
+    {
+      "repository": "sentinel-ai",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "permission_denied",
+      "reason": "gh api repos/Trancendos/sentinel-ai/git/refs -X POST -f ref=refs/heads/security/baseline-hardening-20260222 -f sha=efcb9f691541a9c3c408e71595f1e8e95065a551 failed: gh: Resource not accessible by integration (HTTP 403)"
+    },
+    {
+      "repository": "trancendos-ecosystem",
+      "riskScore": 31,
+      "isFork": false,
+      "stack": [
+        "node",
+        "python",
+        "jvm",
+        "container"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        ".github/CODEOWNERS",
+        ".github/workflows/dependency-review.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "permission_denied",
+      "reason": "gh api repos/Trancendos/trancendos-ecosystem/git/refs -X POST -f ref=refs/heads/security/baseline-hardening-20260222 -f sha=79eeb1e51235b3733d7f4b035e9879ebdc6f71b9 failed: gh: Resource not accessible by integration (HTTP 403)"
+    }
+  ]
+}

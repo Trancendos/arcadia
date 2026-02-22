@@ -1,0 +1,3615 @@
+{
+  "generatedAt": "2026-02-22T18:05:34.245Z",
+  "owner": "Trancendos",
+  "limit": 200,
+  "summary": {
+    "totalRepos": 95,
+    "likelySkeletonRepos": 38,
+    "completionBaseline": 23.5,
+    "missingControls": {
+      "securityPolicy": 86,
+      "dependabot": 76,
+      "codeowners": 78,
+      "ciWorkflow": 54,
+      "securityWorkflow": 86,
+      "license": 56
+    }
+  },
+  "worstRepositories": [
+    {
+      "name": "the-workshop",
+      "url": "https://github.com/Trancendos/the-workshop",
+      "description": "The Workshop - Development, building, and creation space",
+      "updatedAt": "2026-02-09T20:53:44Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 5,
+      "workflowCount": 0,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "the-void",
+      "url": "https://github.com/Trancendos/the-void",
+      "description": "The Void - Secure isolated environment for sensitive operations",
+      "updatedAt": "2026-02-09T20:54:21Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 9,
+      "workflowCount": 0,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "the-treasury",
+      "url": "https://github.com/Trancendos/the-treasury",
+      "description": "The Treasury - Financial management and resource allocation",
+      "updatedAt": "2026-01-23T19:40:41Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "the-sanctuary",
+      "url": "https://github.com/Trancendos/the-sanctuary",
+      "description": "The Sanctuary - Safe space operations",
+      "updatedAt": "2026-01-23T19:40:52Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "the-observatory",
+      "url": "https://github.com/Trancendos/the-observatory",
+      "description": "The Observatory - Analytics, insights, and trend analysis",
+      "updatedAt": "2026-01-23T19:40:44Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "the-nexus",
+      "url": "https://github.com/Trancendos/the-nexus",
+      "description": "The Nexus - Integration hub and connection point",
+      "updatedAt": "2026-01-23T19:40:42Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "the-lighthouse",
+      "url": "https://github.com/Trancendos/the-lighthouse",
+      "description": "The Lighthouse - Monitoring, observability, and guidance center",
+      "updatedAt": "2026-01-23T19:40:39Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "the-library",
+      "url": "https://github.com/Trancendos/the-library",
+      "description": "The Library - Knowledge management and documentation",
+      "updatedAt": "2026-01-23T19:40:41Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "the-ice-box",
+      "url": "https://github.com/Trancendos/the-ice-box",
+      "description": "The ICE Box - Cold storage and archival",
+      "updatedAt": "2026-01-23T19:40:44Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "the-hive",
+      "url": "https://github.com/Trancendos/the-hive",
+      "description": "The Hive - Collaborative intelligence and swarm operations",
+      "updatedAt": "2026-01-23T19:40:43Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "the-foundation",
+      "url": "https://github.com/Trancendos/the-foundation",
+      "description": "The Foundation - Core governance hub",
+      "updatedAt": "2026-01-23T19:39:31Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "the-forge",
+      "url": "https://github.com/Trancendos/the-forge",
+      "description": "The Forge - AI model training",
+      "updatedAt": "2026-01-23T19:40:50Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "the-dr-ai",
+      "url": "https://github.com/Trancendos/the-dr-ai",
+      "description": "The Dr - Autonomous healing and code repair",
+      "updatedAt": "2026-01-23T19:40:53Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "the-cryptex",
+      "url": "https://github.com/Trancendos/the-cryptex",
+      "description": "The Cryptex - Security and encryption",
+      "updatedAt": "2026-01-23T19:40:50Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "the-citadel",
+      "url": "https://github.com/Trancendos/the-citadel",
+      "description": "The Citadel - Defense and protection",
+      "updatedAt": "2026-01-23T19:40:52Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "the-agora",
+      "url": "https://github.com/Trancendos/the-agora",
+      "description": "The Agora - Discussion and collaboration forum",
+      "updatedAt": "2026-01-23T19:40:48Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "solarscene-ai",
+      "url": "https://github.com/Trancendos/solarscene-ai",
+      "description": "Solarscene - Day operations and energy",
+      "updatedAt": "2026-01-23T19:41:02Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "shared-core",
+      "url": "https://github.com/Trancendos/shared-core",
+      "description": "Shared core libraries and types",
+      "updatedAt": "2026-01-29T20:28:22Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "serenity-ai",
+      "url": "https://github.com/Trancendos/serenity-ai",
+      "description": "Serenity - Calm and wellness",
+      "updatedAt": "2026-01-23T19:41:03Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "sentinel-ai",
+      "url": "https://github.com/Trancendos/sentinel-ai",
+      "description": "Sentinel - Watchdog and alerts",
+      "updatedAt": "2026-01-23T19:41:05Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "renik-ai",
+      "url": "https://github.com/Trancendos/renik-ai",
+      "description": "Renik - Crypto security specialist",
+      "updatedAt": "2026-01-23T19:40:56Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "queen-ai",
+      "url": "https://github.com/Trancendos/queen-ai",
+      "description": "Queen - Hive management",
+      "updatedAt": "2026-01-23T19:41:08Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "qodo-ci",
+      "url": "https://github.com/Trancendos/qodo-ci",
+      "description": "Increase your code coverage",
+      "updatedAt": "2026-01-19T13:58:02Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "unknown"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "prometheus-ai",
+      "url": "https://github.com/Trancendos/prometheus-ai",
+      "description": "Prometheus - Monitoring and alerting",
+      "updatedAt": "2026-01-23T19:40:54Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "product-workshop",
+      "url": "https://github.com/Trancendos/product-workshop",
+      "description": "A simple project for product onboarding and experiencing Qodo products for the first time",
+      "updatedAt": "2026-01-19T13:57:19Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "unknown"
+      ],
+      "rootEntryCount": 14,
+      "workflowCount": 0,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    }
+  ],
+  "repositories": [
+    {
+      "name": "vertex-ai-creative-studio",
+      "url": "https://github.com/Trancendos/vertex-ai-creative-studio",
+      "description": "GenMedia Creative Studio is a Vertex AI generative media user experience highlighting the use of Imagen, Veo, Gemini 🍌, Gemini TTS, Chirp 3, Lyria and other generative media APIs on Google Cloud.",
+      "updatedAt": "2026-02-22T11:14:32Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "python",
+        "container",
+        "terraform"
+      ],
+      "rootEntryCount": 50,
+      "workflowCount": 5,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": true,
+        "ciWorkflow": true,
+        "securityWorkflow": false,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "securityWorkflow"
+      ],
+      "completionScore": 50
+    },
+    {
+      "name": "uv-docker-example",
+      "url": "https://github.com/Trancendos/uv-docker-example",
+      "description": "An example of using uv in Docker images",
+      "updatedAt": "2026-02-22T11:20:23Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "python",
+        "container"
+      ],
+      "rootEntryCount": 14,
+      "workflowCount": 1,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": true,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 16.7
+    },
+    {
+      "name": "uv",
+      "url": "https://github.com/Trancendos/uv",
+      "description": "An extremely fast Python package and project manager, written in Rust.",
+      "updatedAt": "2026-02-22T11:19:30Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "python",
+        "rust",
+        "container"
+      ],
+      "rootEntryCount": 42,
+      "workflowCount": 25,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": true,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": true,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "dependabot",
+        "codeowners",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 33.3
+    },
+    {
+      "name": "trancendos-ecosystem",
+      "url": "https://github.com/Trancendos/trancendos-ecosystem",
+      "description": "Financial autonomy platform with AI-powered scalability featuring Alervato and Luminous-MastermindAI components",
+      "updatedAt": "2026-02-09T20:51:42Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node",
+        "container"
+      ],
+      "rootEntryCount": 140,
+      "workflowCount": 74,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": true,
+        "dependabot": true,
+        "codeowners": false,
+        "ciWorkflow": true,
+        "securityWorkflow": true,
+        "license": true
+      },
+      "missingControls": [
+        "codeowners"
+      ],
+      "completionScore": 83.3
+    },
+    {
+      "name": "the-workshop",
+      "url": "https://github.com/Trancendos/the-workshop",
+      "description": "The Workshop - Development, building, and creation space",
+      "updatedAt": "2026-02-09T20:53:44Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 5,
+      "workflowCount": 0,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "the-void",
+      "url": "https://github.com/Trancendos/the-void",
+      "description": "The Void - Secure isolated environment for sensitive operations",
+      "updatedAt": "2026-02-09T20:54:21Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 9,
+      "workflowCount": 0,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "the-treasury",
+      "url": "https://github.com/Trancendos/the-treasury",
+      "description": "The Treasury - Financial management and resource allocation",
+      "updatedAt": "2026-01-23T19:40:41Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "the-sanctuary",
+      "url": "https://github.com/Trancendos/the-sanctuary",
+      "description": "The Sanctuary - Safe space operations",
+      "updatedAt": "2026-01-23T19:40:52Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "the-observatory",
+      "url": "https://github.com/Trancendos/the-observatory",
+      "description": "The Observatory - Analytics, insights, and trend analysis",
+      "updatedAt": "2026-01-23T19:40:44Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "the-nexus",
+      "url": "https://github.com/Trancendos/the-nexus",
+      "description": "The Nexus - Integration hub and connection point",
+      "updatedAt": "2026-01-23T19:40:42Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "the-lighthouse",
+      "url": "https://github.com/Trancendos/the-lighthouse",
+      "description": "The Lighthouse - Monitoring, observability, and guidance center",
+      "updatedAt": "2026-01-23T19:40:39Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "the-library",
+      "url": "https://github.com/Trancendos/the-library",
+      "description": "The Library - Knowledge management and documentation",
+      "updatedAt": "2026-01-23T19:40:41Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "the-ice-box",
+      "url": "https://github.com/Trancendos/the-ice-box",
+      "description": "The ICE Box - Cold storage and archival",
+      "updatedAt": "2026-01-23T19:40:44Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "the-hive",
+      "url": "https://github.com/Trancendos/the-hive",
+      "description": "The Hive - Collaborative intelligence and swarm operations",
+      "updatedAt": "2026-01-23T19:40:43Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "the-foundation",
+      "url": "https://github.com/Trancendos/the-foundation",
+      "description": "The Foundation - Core governance hub",
+      "updatedAt": "2026-01-23T19:39:31Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "the-forge",
+      "url": "https://github.com/Trancendos/the-forge",
+      "description": "The Forge - AI model training",
+      "updatedAt": "2026-01-23T19:40:50Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "the-dr-ai",
+      "url": "https://github.com/Trancendos/the-dr-ai",
+      "description": "The Dr - Autonomous healing and code repair",
+      "updatedAt": "2026-01-23T19:40:53Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "the-cryptex",
+      "url": "https://github.com/Trancendos/the-cryptex",
+      "description": "The Cryptex - Security and encryption",
+      "updatedAt": "2026-01-23T19:40:50Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "the-citadel",
+      "url": "https://github.com/Trancendos/the-citadel",
+      "description": "The Citadel - Defense and protection",
+      "updatedAt": "2026-01-23T19:40:52Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "the-agora",
+      "url": "https://github.com/Trancendos/the-agora",
+      "description": "The Agora - Discussion and collaboration forum",
+      "updatedAt": "2026-01-23T19:40:48Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "test-with-actions",
+      "url": "https://github.com/Trancendos/test-with-actions",
+      "description": "Create workflows that enable you to use Continuous Integration (CI) for your projects.",
+      "updatedAt": "2026-01-19T06:23:29Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "unknown"
+      ],
+      "rootEntryCount": 5,
+      "workflowCount": 6,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": true,
+        "codeowners": false,
+        "ciWorkflow": true,
+        "securityWorkflow": false,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy",
+        "codeowners",
+        "securityWorkflow"
+      ],
+      "completionScore": 50
+    },
+    {
+      "name": "solarscene-ai",
+      "url": "https://github.com/Trancendos/solarscene-ai",
+      "description": "Solarscene - Day operations and energy",
+      "updatedAt": "2026-01-23T19:41:02Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "smoke-tests",
+      "url": "https://github.com/Trancendos/smoke-tests",
+      "description": "A collection of manifest files for various package managers and is used to perform end-to-end tests for Dependabot.",
+      "updatedAt": "2026-01-19T04:41:49Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "unknown"
+      ],
+      "rootEntryCount": 40,
+      "workflowCount": 10,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": true,
+        "codeowners": true,
+        "ciWorkflow": true,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 50
+    },
+    {
+      "name": "skills-for-emu",
+      "url": "https://github.com/Trancendos/skills-for-emu",
+      "description": "Guide on enabling GitHub Skills for EMU organizations",
+      "updatedAt": "2026-01-19T06:23:11Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "unknown"
+      ],
+      "rootEntryCount": 5,
+      "workflowCount": 1,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": true,
+        "securityWorkflow": false,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "securityWorkflow"
+      ],
+      "completionScore": 33.3
+    },
+    {
+      "name": "shared-core",
+      "url": "https://github.com/Trancendos/shared-core",
+      "description": "Shared core libraries and types",
+      "updatedAt": "2026-01-29T20:28:22Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "setup-jfrog-cli",
+      "url": "https://github.com/Trancendos/setup-jfrog-cli",
+      "description": "Set up JFrog CLI in your GitHub Actions workflow",
+      "updatedAt": "2026-01-19T04:46:19Z",
+      "isPrivate": false,
+      "defaultBranch": "master",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 20,
+      "workflowCount": 8,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": true,
+        "securityWorkflow": false,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "securityWorkflow"
+      ],
+      "completionScore": 33.3
+    },
+    {
+      "name": "serenity-ai",
+      "url": "https://github.com/Trancendos/serenity-ai",
+      "description": "Serenity - Calm and wellness",
+      "updatedAt": "2026-01-23T19:41:03Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "sentinel-ai",
+      "url": "https://github.com/Trancendos/sentinel-ai",
+      "description": "Sentinel - Watchdog and alerts",
+      "updatedAt": "2026-01-23T19:41:05Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "secrets-portal",
+      "url": "https://github.com/Trancendos/secrets-portal",
+      "description": "Zero-cost GitHub Secrets Management Portal - Web + Mobile + CLI",
+      "updatedAt": "2026-01-16T22:02:54Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 40,
+      "workflowCount": 8,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": true,
+        "dependabot": true,
+        "codeowners": false,
+        "ciWorkflow": true,
+        "securityWorkflow": true,
+        "license": false
+      },
+      "missingControls": [
+        "codeowners",
+        "license"
+      ],
+      "completionScore": 66.7
+    },
+    {
+      "name": "scale-institutional-knowledge-using-copilot-spaces",
+      "url": "https://github.com/Trancendos/scale-institutional-knowledge-using-copilot-spaces",
+      "description": "",
+      "updatedAt": "2026-01-19T06:22:19Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "unknown"
+      ],
+      "rootEntryCount": 6,
+      "workflowCount": 4,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": true,
+        "securityWorkflow": false,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "securityWorkflow"
+      ],
+      "completionScore": 33.3
+    },
+    {
+      "name": "renik-ai",
+      "url": "https://github.com/Trancendos/renik-ai",
+      "description": "Renik - Crypto security specialist",
+      "updatedAt": "2026-01-23T19:40:56Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "queen-ai",
+      "url": "https://github.com/Trancendos/queen-ai",
+      "description": "Queen - Hive management",
+      "updatedAt": "2026-01-23T19:41:08Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "qodo-cover",
+      "url": "https://github.com/Trancendos/qodo-cover",
+      "description": "Qodo-Cover: An AI-Powered Tool for Automated Test Generation and Code Coverage Enhancement! 💻🤖🧪🐞",
+      "updatedAt": "2026-01-19T13:57:35Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "python",
+        "container"
+      ],
+      "rootEntryCount": 17,
+      "workflowCount": 3,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": true,
+        "securityWorkflow": false,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "securityWorkflow"
+      ],
+      "completionScore": 33.3
+    },
+    {
+      "name": "qodo-ci-example",
+      "url": "https://github.com/Trancendos/qodo-ci-example",
+      "description": "Examples for how to use the Qodo Cover GitHub Action",
+      "updatedAt": "2026-01-19T13:57:50Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "unknown"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 8,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": true,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 16.7
+    },
+    {
+      "name": "qodo-ci",
+      "url": "https://github.com/Trancendos/qodo-ci",
+      "description": "Increase your code coverage",
+      "updatedAt": "2026-01-19T13:58:02Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "unknown"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "prometheus-ai",
+      "url": "https://github.com/Trancendos/prometheus-ai",
+      "description": "Prometheus - Monitoring and alerting",
+      "updatedAt": "2026-01-23T19:40:54Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "product-workshop",
+      "url": "https://github.com/Trancendos/product-workshop",
+      "description": "A simple project for product onboarding and experiencing Qodo products for the first time",
+      "updatedAt": "2026-01-19T13:57:19Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "unknown"
+      ],
+      "rootEntryCount": 14,
+      "workflowCount": 0,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "pr-compliance-templates",
+      "url": "https://github.com/Trancendos/pr-compliance-templates",
+      "description": "A comprehensive library of pr_compliance_checklist.yaml examples to automate and standardize your code review process. Templates are categorized by technology stack and compliance requirements.",
+      "updatedAt": "2026-01-19T13:57:07Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "unknown"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "pr-agent",
+      "url": "https://github.com/Trancendos/pr-agent",
+      "description": "🚀 PR Agent - The Original Open-Source PR Reviewer, This repo is not the Qodo free tier! Try the free version on our website. ",
+      "updatedAt": "2026-01-19T13:55:28Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "python"
+      ],
+      "rootEntryCount": 28,
+      "workflowCount": 6,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": true,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": true,
+        "securityWorkflow": false,
+        "license": true
+      },
+      "missingControls": [
+        "dependabot",
+        "codeowners",
+        "securityWorkflow"
+      ],
+      "completionScore": 50
+    },
+    {
+      "name": "porter-family-ai",
+      "url": "https://github.com/Trancendos/porter-family-ai",
+      "description": "Porter Family - Data transport",
+      "updatedAt": "2026-01-23T19:41:08Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "platform-samples",
+      "url": "https://github.com/Trancendos/platform-samples",
+      "description": "A public place for all platform sample projects.",
+      "updatedAt": "2026-01-23T17:43:07Z",
+      "isPrivate": false,
+      "defaultBranch": "master",
+      "stack": [
+        "unknown"
+      ],
+      "rootEntryCount": 13,
+      "workflowCount": 2,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": true,
+        "securityWorkflow": true,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "license"
+      ],
+      "completionScore": 33.3
+    },
+    {
+      "name": "oracle-ai",
+      "url": "https://github.com/Trancendos/oracle-ai",
+      "description": "Oracle - Predictions and forecasting",
+      "updatedAt": "2026-01-23T19:41:06Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "opencode",
+      "url": "https://github.com/Trancendos/opencode",
+      "description": "The open source coding agent.",
+      "updatedAt": "2026-02-20T02:35:28Z",
+      "isPrivate": false,
+      "defaultBranch": "dev",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 51,
+      "workflowCount": 32,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": true,
+        "dependabot": false,
+        "codeowners": true,
+        "ciWorkflow": true,
+        "securityWorkflow": false,
+        "license": true
+      },
+      "missingControls": [
+        "dependabot",
+        "securityWorkflow"
+      ],
+      "completionScore": 66.7
+    },
+    {
+      "name": "octokit-plugin-config",
+      "url": "https://github.com/Trancendos/octokit-plugin-config",
+      "description": "🛠️ Get/set persisted configuration using YAML/JSON files in repositories",
+      "updatedAt": "2026-01-19T13:40:56Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 13,
+      "workflowCount": 3,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": true,
+        "securityWorkflow": false,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "securityWorkflow"
+      ],
+      "completionScore": 33.3
+    },
+    {
+      "name": "norman-ai",
+      "url": "https://github.com/Trancendos/norman-ai",
+      "description": "Norman - Security guardian and threat detection",
+      "updatedAt": "2026-01-23T19:40:53Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "nexus-ai",
+      "url": "https://github.com/Trancendos/nexus-ai",
+      "description": "Nexus AI - Connection specialist",
+      "updatedAt": "2026-01-23T19:41:04Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "mime-db",
+      "url": "https://github.com/Trancendos/mime-db",
+      "description": "Media Type Database",
+      "updatedAt": "2026-02-22T11:24:41Z",
+      "isPrivate": false,
+      "defaultBranch": "master",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 13,
+      "workflowCount": 4,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": true,
+        "codeowners": false,
+        "ciWorkflow": true,
+        "securityWorkflow": true,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy",
+        "codeowners"
+      ],
+      "completionScore": 66.7
+    },
+    {
+      "name": "mercury-ai",
+      "url": "https://github.com/Trancendos/mercury-ai",
+      "description": "Mercury - Trading and finance",
+      "updatedAt": "2026-01-23T19:41:08Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "mcpmcp-server",
+      "url": "https://github.com/Trancendos/mcpmcp-server",
+      "description": "Discover, setup, and integrate MCP servers with your favorite clients. Unlock the full potential of AI in your daily workflow.",
+      "updatedAt": "2026-01-03T20:05:25Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "unknown"
+      ],
+      "rootEntryCount": 2,
+      "workflowCount": 0,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow"
+      ],
+      "completionScore": 16.7
+    },
+    {
+      "name": "lunascene-ai",
+      "url": "https://github.com/Trancendos/lunascene-ai",
+      "description": "Lunascene - Night operations and dreams",
+      "updatedAt": "2026-01-23T19:41:04Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "lille-sc-ai",
+      "url": "https://github.com/Trancendos/lille-sc-ai",
+      "description": "Lille SC - Learning and education",
+      "updatedAt": "2026-01-23T19:40:56Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "iris-ai",
+      "url": "https://github.com/Trancendos/iris-ai",
+      "description": "Iris - Visual processing and analysis",
+      "updatedAt": "2026-01-23T19:41:05Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "infrastructure",
+      "url": "https://github.com/Trancendos/infrastructure",
+      "description": "Infrastructure and deployment configs",
+      "updatedAt": "2026-01-29T20:29:06Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 5,
+      "workflowCount": 0,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "infinity-portal",
+      "url": "https://github.com/Trancendos/infinity-portal",
+      "description": "Infinity Portal - Central authentication and access",
+      "updatedAt": "2026-01-23T19:40:48Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "guardian-ai",
+      "url": "https://github.com/Trancendos/guardian-ai",
+      "description": "Guardian - Protection and defense",
+      "updatedAt": "2026-01-23T19:40:56Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "github-app-check-trigger",
+      "url": "https://github.com/Trancendos/github-app-check-trigger",
+      "description": "",
+      "updatedAt": "2026-01-04T13:09:38Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "unknown"
+      ],
+      "rootEntryCount": 2,
+      "workflowCount": 0,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "github-action-merge-dependabot",
+      "url": "https://github.com/Trancendos/github-action-merge-dependabot",
+      "description": "This action automatically approves and merges dependabot PRs",
+      "updatedAt": "2026-01-19T04:39:35Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 14,
+      "workflowCount": 4,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": true,
+        "codeowners": false,
+        "ciWorkflow": true,
+        "securityWorkflow": false,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy",
+        "codeowners",
+        "securityWorkflow"
+      ],
+      "completionScore": 50
+    },
+    {
+      "name": "fetch-metadata",
+      "url": "https://github.com/Trancendos/fetch-metadata",
+      "description": "Extract information about the dependencies being updated by a Dependabot-generated PR.",
+      "updatedAt": "2026-01-03T23:46:35Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 19,
+      "workflowCount": 7,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": true,
+        "codeowners": true,
+        "ciWorkflow": true,
+        "securityWorkflow": false,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy",
+        "securityWorkflow"
+      ],
+      "completionScore": 66.7
+    },
+    {
+      "name": "exercise-toolkit",
+      "url": "https://github.com/Trancendos/exercise-toolkit",
+      "description": "Toolkit to standardize and reuse common parts of Skills exercises",
+      "updatedAt": "2026-01-19T06:23:55Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "unknown"
+      ],
+      "rootEntryCount": 5,
+      "workflowCount": 9,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": true,
+        "codeowners": false,
+        "ciWorkflow": true,
+        "securityWorkflow": false,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy",
+        "codeowners",
+        "securityWorkflow"
+      ],
+      "completionScore": 50
+    },
+    {
+      "name": "example-cli-usage",
+      "url": "https://github.com/Trancendos/example-cli-usage",
+      "description": "Demonstrates how to self-host Dependabot :dependabot:",
+      "updatedAt": "2026-01-19T04:43:54Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "unknown"
+      ],
+      "rootEntryCount": 8,
+      "workflowCount": 4,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": true,
+        "ciWorkflow": true,
+        "securityWorkflow": false,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "securityWorkflow"
+      ],
+      "completionScore": 50
+    },
+    {
+      "name": "engine-core",
+      "url": "https://github.com/Trancendos/engine-core",
+      "description": "Chat strategies for LLMs",
+      "updatedAt": "2026-01-04T00:42:37Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node",
+        "container"
+      ],
+      "rootEntryCount": 11,
+      "workflowCount": 0,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow"
+      ],
+      "completionScore": 16.7
+    },
+    {
+      "name": "echo-ai",
+      "url": "https://github.com/Trancendos/echo-ai",
+      "description": "Echo - Communication and messaging",
+      "updatedAt": "2026-01-23T19:41:04Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "dorris-ai",
+      "url": "https://github.com/Trancendos/dorris-ai",
+      "description": "Dorris - Administrative assistant",
+      "updatedAt": "2026-01-23T19:40:55Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "dinky",
+      "url": "https://github.com/Trancendos/dinky",
+      "description": "Dinky is a Jekyll theme for GitHub Pages",
+      "updatedAt": "2026-02-22T11:25:42Z",
+      "isPrivate": false,
+      "defaultBranch": "master",
+      "stack": [
+        "ruby"
+      ],
+      "rootEntryCount": 18,
+      "workflowCount": 1,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": true,
+        "ciWorkflow": true,
+        "securityWorkflow": false,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "securityWorkflow"
+      ],
+      "completionScore": 50
+    },
+    {
+      "name": "dependency-review-action",
+      "url": "https://github.com/Trancendos/dependency-review-action",
+      "description": "A GitHub Action for detecting vulnerable dependencies and invalid licenses in your PRs",
+      "updatedAt": "2026-01-19T04:38:23Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 27,
+      "workflowCount": 4,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": true,
+        "dependabot": true,
+        "codeowners": true,
+        "ciWorkflow": true,
+        "securityWorkflow": true,
+        "license": true
+      },
+      "missingControls": [],
+      "completionScore": 100
+    },
+    {
+      "name": "dependabot-terraform-action",
+      "url": "https://github.com/Trancendos/dependabot-terraform-action",
+      "description": "🔧 Github action for running dependabot on terraform repositories with HCL 2.0",
+      "updatedAt": "2026-01-03T23:43:32Z",
+      "isPrivate": false,
+      "defaultBranch": "master",
+      "stack": [
+        "container"
+      ],
+      "rootEntryCount": 9,
+      "workflowCount": 4,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": true,
+        "securityWorkflow": false,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "securityWorkflow"
+      ],
+      "completionScore": 33.3
+    },
+    {
+      "name": "dependabot-kev-action",
+      "url": "https://github.com/Trancendos/dependabot-kev-action",
+      "description": "Action to detect if any open Dependabot alerts are in the CISA Known Exploited Vulnerabilities (KEV) Catalog of CVEs and fail the workflow.",
+      "updatedAt": "2026-01-03T23:44:42Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "unknown"
+      ],
+      "rootEntryCount": 10,
+      "workflowCount": 0,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": true,
+        "dependabot": false,
+        "codeowners": true,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "dependabot",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 33.3
+    },
+    {
+      "name": "dependabot-core",
+      "url": "https://github.com/Trancendos/dependabot-core",
+      "description": "🤖 Dependabot's core logic for creating update PRs.",
+      "updatedAt": "2026-01-19T04:41:17Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "ruby"
+      ],
+      "rootEntryCount": 67,
+      "workflowCount": 18,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": true,
+        "codeowners": true,
+        "ciWorkflow": true,
+        "securityWorkflow": true,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy"
+      ],
+      "completionScore": 83.3
+    },
+    {
+      "name": "dependabot-changesets",
+      "url": "https://github.com/Trancendos/dependabot-changesets",
+      "description": "Github action to generate and commit changesets for dependabot PRs, grouped or ungrouped",
+      "updatedAt": "2026-01-03T23:45:46Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 24,
+      "workflowCount": 1,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": true,
+        "securityWorkflow": false,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "securityWorkflow"
+      ],
+      "completionScore": 33.3
+    },
+    {
+      "name": "demo",
+      "url": "https://github.com/Trancendos/demo",
+      "description": "🤖 Fork me to try out Dependabot ",
+      "updatedAt": "2026-01-19T04:42:15Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "unknown"
+      ],
+      "rootEntryCount": 5,
+      "workflowCount": 2,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": true,
+        "codeowners": false,
+        "ciWorkflow": true,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "codeowners",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 33.3
+    },
+    {
+      "name": "Custom-AI-Jira-Agent",
+      "url": "https://github.com/Trancendos/Custom-AI-Jira-Agent",
+      "description": "A custom AI Jira agent, with a tool to preform triage on newly created Jira issues. The project makes use of LangChain agents, served via Django (with PostgreSQL) and Google Mesop. Services are provided in Docker to be run locally. The prompting strategy includes a CO-STAR system prompt, Chain-of-Thought (CoT) reasoning with few-shot prompting. ",
+      "updatedAt": "2026-02-22T11:23:37Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "container"
+      ],
+      "rootEntryCount": 9,
+      "workflowCount": 0,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow"
+      ],
+      "completionScore": 16.7
+    },
+    {
+      "name": "cuda-toolkit",
+      "url": "https://github.com/Trancendos/cuda-toolkit",
+      "description": "GitHub Action to install CUDA",
+      "updatedAt": "2026-01-19T04:47:27Z",
+      "isPrivate": false,
+      "defaultBranch": "master",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 33,
+      "workflowCount": 5,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": true,
+        "codeowners": true,
+        "ciWorkflow": true,
+        "securityWorkflow": true,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy"
+      ],
+      "completionScore": 83.3
+    },
+    {
+      "name": "cornelius-ai",
+      "url": "https://github.com/Trancendos/cornelius-ai",
+      "description": "Cornelius - Master AI Orchestrator",
+      "updatedAt": "2026-01-23T19:40:52Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "command",
+      "url": "https://github.com/Trancendos/command",
+      "description": "The Qodo Gen CLI lets you interact with the Qodo platform from your terminal for automation, advanced AI workflows, or CI/CD integration.",
+      "updatedAt": "2026-01-19T13:56:39Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "unknown"
+      ],
+      "rootEntryCount": 6,
+      "workflowCount": 1,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": true,
+        "securityWorkflow": false,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "securityWorkflow"
+      ],
+      "completionScore": 33.3
+    },
+    {
+      "name": "combine-prs",
+      "url": "https://github.com/Trancendos/combine-prs",
+      "description": "GitHub Action to combine multiple PRs into a single one",
+      "updatedAt": "2026-01-19T04:49:46Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 20,
+      "workflowCount": 4,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": true,
+        "ciWorkflow": true,
+        "securityWorkflow": true,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot"
+      ],
+      "completionScore": 66.7
+    },
+    {
+      "name": "cli",
+      "url": "https://github.com/Trancendos/cli",
+      "description": "A tool for testing and debugging Dependabot update jobs.",
+      "updatedAt": "2026-01-19T04:40:46Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "go"
+      ],
+      "rootEntryCount": 17,
+      "workflowCount": 4,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": true,
+        "dependabot": true,
+        "codeowners": true,
+        "ciWorkflow": true,
+        "securityWorkflow": false,
+        "license": true
+      },
+      "missingControls": [
+        "securityWorkflow"
+      ],
+      "completionScore": 83.3
+    },
+    {
+      "name": "chronos-ai",
+      "url": "https://github.com/Trancendos/chronos-ai",
+      "description": "Chronos - Time management and scheduling",
+      "updatedAt": "2026-01-23T19:40:58Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "central-plexus",
+      "url": "https://github.com/Trancendos/central-plexus",
+      "description": "Central Plexus - Core routing and orchestration",
+      "updatedAt": "2026-01-23T19:40:50Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "cayman",
+      "url": "https://github.com/Trancendos/cayman",
+      "description": "Cayman is a Jekyll theme for GitHub Pages",
+      "updatedAt": "2026-02-22T11:25:28Z",
+      "isPrivate": false,
+      "defaultBranch": "master",
+      "stack": [
+        "ruby"
+      ],
+      "rootEntryCount": 18,
+      "workflowCount": 2,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": true,
+        "ciWorkflow": true,
+        "securityWorkflow": false,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "securityWorkflow"
+      ],
+      "completionScore": 50
+    },
+    {
+      "name": "bumpgen",
+      "url": "https://github.com/Trancendos/bumpgen",
+      "description": "bumpgen is an AI agent that upgrades npm packages ",
+      "updatedAt": "2026-01-19T04:49:16Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 18,
+      "workflowCount": 12,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": true,
+        "codeowners": false,
+        "ciWorkflow": true,
+        "securityWorkflow": false,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy",
+        "codeowners",
+        "securityWorkflow"
+      ],
+      "completionScore": 50
+    },
+    {
+      "name": "BBDC-App-Releases",
+      "url": "https://github.com/Trancendos/BBDC-App-Releases",
+      "description": "",
+      "updatedAt": "2026-01-19T13:56:05Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "unknown"
+      ],
+      "rootEntryCount": 1,
+      "workflowCount": 0,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "aware-swe-agent",
+      "url": "https://github.com/Trancendos/aware-swe-agent",
+      "description": "An autonomous software engineering agent designed to solve software issues by leveraging deep contextual understanding. Features the Aware tool, which provides comprehensive insights across repositories and documentation, enabling intelligent code analysis and issue resolution.",
+      "updatedAt": "2026-01-19T13:56:52Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "python"
+      ],
+      "rootEntryCount": 6,
+      "workflowCount": 0,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow"
+      ],
+      "completionScore": 16.7
+    },
+    {
+      "name": "auto-code-rover-action",
+      "url": "https://github.com/Trancendos/auto-code-rover-action",
+      "description": "Github Action repo for AutoCodeRover to run on new issues",
+      "updatedAt": "2026-01-18T23:45:40Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "unknown"
+      ],
+      "rootEntryCount": 5,
+      "workflowCount": 0,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "atlas-ai",
+      "url": "https://github.com/Trancendos/atlas-ai",
+      "description": "Atlas - Navigation and mapping",
+      "updatedAt": "2026-01-23T19:41:05Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "architect",
+      "url": "https://github.com/Trancendos/architect",
+      "description": "Architect is a Jekyll theme for GitHub Pages",
+      "updatedAt": "2026-02-22T11:25:11Z",
+      "isPrivate": false,
+      "defaultBranch": "master",
+      "stack": [
+        "ruby"
+      ],
+      "rootEntryCount": 18,
+      "workflowCount": 2,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": true,
+        "ciWorkflow": true,
+        "securityWorkflow": false,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "securityWorkflow"
+      ],
+      "completionScore": 50
+    },
+    {
+      "name": "arcadia",
+      "url": "https://github.com/Trancendos/arcadia",
+      "description": "Arcadia - Community platform and marketplace",
+      "updatedAt": "2026-01-23T19:40:49Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 4,
+      "workflowCount": 0,
+      "isLikelySkeleton": true,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "applied-ai-engineering-samples",
+      "url": "https://github.com/Trancendos/applied-ai-engineering-samples",
+      "description": "This repository compiles code samples and notebooks demonstrating how to use Generative AI on Google Cloud Vertex AI.",
+      "updatedAt": "2026-02-22T11:14:06Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "unknown"
+      ],
+      "rootEntryCount": 11,
+      "workflowCount": 1,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": true,
+        "ciWorkflow": true,
+        "securityWorkflow": false,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "securityWorkflow"
+      ],
+      "completionScore": 50
+    },
+    {
+      "name": "app",
+      "url": "https://github.com/Trancendos/app",
+      "description": "Pull Requests for GitHub repository settings",
+      "updatedAt": "2026-01-19T13:39:41Z",
+      "isPrivate": false,
+      "defaultBranch": "master",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 22,
+      "workflowCount": 3,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": true,
+        "codeowners": false,
+        "ciWorkflow": true,
+        "securityWorkflow": false,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy",
+        "codeowners",
+        "securityWorkflow"
+      ],
+      "completionScore": 50
+    },
+    {
+      "name": "ai-pr-reviewer",
+      "url": "https://github.com/Trancendos/ai-pr-reviewer",
+      "description": "Github Action for Perplexity based Automatic Github PR Review feedback",
+      "updatedAt": "2026-01-20T15:01:25Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "python"
+      ],
+      "rootEntryCount": 5,
+      "workflowCount": 0,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": false
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow",
+        "license"
+      ],
+      "completionScore": 0
+    },
+    {
+      "name": "agent-starter-pack",
+      "url": "https://github.com/Trancendos/agent-starter-pack",
+      "description": "Ship AI Agents to Google Cloud in minutes, not months. Production-ready templates with built-in CI/CD, evaluation, and observability.",
+      "updatedAt": "2026-02-22T11:13:45Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "python"
+      ],
+      "rootEntryCount": 15,
+      "workflowCount": 3,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": true,
+        "securityWorkflow": false,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "securityWorkflow"
+      ],
+      "completionScore": 33.3
+    },
+    {
+      "name": "adk-samples",
+      "url": "https://github.com/Trancendos/adk-samples",
+      "description": "A collection of sample agents built with Agent Development Kit (ADK) ",
+      "updatedAt": "2026-02-22T11:13:35Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "python"
+      ],
+      "rootEntryCount": 11,
+      "workflowCount": 7,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": true,
+        "codeowners": true,
+        "ciWorkflow": true,
+        "securityWorkflow": false,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy",
+        "securityWorkflow"
+      ],
+      "completionScore": 66.7
+    },
+    {
+      "name": "actions-template-sync",
+      "url": "https://github.com/Trancendos/actions-template-sync",
+      "description": ":octocat: Github action for syncing other repositories (templates) with current repository. Any git provider like GitHub (enterprise), GitLab, Gittea,.. are supported for the source repository ",
+      "updatedAt": "2026-01-19T04:45:05Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "container"
+      ],
+      "rootEntryCount": 22,
+      "workflowCount": 15,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": true,
+        "dependabot": true,
+        "codeowners": true,
+        "ciWorkflow": true,
+        "securityWorkflow": false,
+        "license": true
+      },
+      "missingControls": [
+        "securityWorkflow"
+      ],
+      "completionScore": 83.3
+    },
+    {
+      "name": "actions",
+      "url": "https://github.com/Trancendos/actions",
+      "description": "A collection of GitHub Actions to accelerate your Gradle Builds on GitHub",
+      "updatedAt": "2026-01-19T04:45:41Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "unknown"
+      ],
+      "rootEntryCount": 16,
+      "workflowCount": 32,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": true,
+        "codeowners": false,
+        "ciWorkflow": true,
+        "securityWorkflow": true,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy",
+        "codeowners"
+      ],
+      "completionScore": 66.7
+    },
+    {
+      "name": "action-dependency-diff",
+      "url": "https://github.com/Trancendos/action-dependency-diff",
+      "description": "A GitHub action to report dependency changes and potential problems",
+      "updatedAt": "2026-01-19T04:48:23Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "node"
+      ],
+      "rootEntryCount": 17,
+      "workflowCount": 2,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": true,
+        "codeowners": false,
+        "ciWorkflow": true,
+        "securityWorkflow": false,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy",
+        "codeowners",
+        "securityWorkflow"
+      ],
+      "completionScore": 50
+    },
+    {
+      "name": ".github",
+      "url": "https://github.com/Trancendos/.github",
+      "description": "GitHub Automation > actions / templates / probot configurations > automated with GitHub actions",
+      "updatedAt": "2026-02-09T20:55:00Z",
+      "isPrivate": false,
+      "defaultBranch": "main",
+      "stack": [
+        "unknown"
+      ],
+      "rootEntryCount": 7,
+      "workflowCount": 0,
+      "isLikelySkeleton": false,
+      "controls": {
+        "securityPolicy": false,
+        "dependabot": false,
+        "codeowners": false,
+        "ciWorkflow": false,
+        "securityWorkflow": false,
+        "license": true
+      },
+      "missingControls": [
+        "securityPolicy",
+        "dependabot",
+        "codeowners",
+        "ciWorkflow",
+        "securityWorkflow"
+      ],
+      "completionScore": 16.7
+    }
+  ]
+}
