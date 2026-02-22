@@ -1,0 +1,819 @@
+{
+  "summary": {
+    "generatedAt": "2026-02-22T19:19:06.419Z",
+    "owner": "Trancendos",
+    "minRiskScore": 30,
+    "includeForks": false,
+    "dryRun": true,
+    "branchName": "security/baseline-hardening-20260222",
+    "targetedRepositories": 40,
+    "applied": 0,
+    "dryRunCount": 40,
+    "noChangesNeeded": 0,
+    "permissionDenied": 0,
+    "failed": 0
+  },
+  "actionRefs": {
+    "checkout": "34e114876b0b11c390a56381ad16ebd13914f8d5",
+    "dependencyReview": "05fe4576374b728f0c523d6a13d64c25081e0803",
+    "trivy": "76071ef0d7ec797419534a183b498b4d6366cf37"
+  },
+  "results": [
+    {
+      "repository": "secrets-portal",
+      "riskScore": 52,
+      "isFork": false,
+      "stack": [
+        "node",
+        "jvm"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        ".github/CODEOWNERS",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "norman-ai",
+      "riskScore": 44,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "the-treasury",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "the-sanctuary",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "the-observatory",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "the-nexus",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "the-lighthouse",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "the-library",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "the-ice-box",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "the-hive",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "the-foundation",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "the-forge",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "the-dr-ai",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "the-cryptex",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "the-citadel",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "the-agora",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "solarscene-ai",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "shared-core",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "serenity-ai",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "sentinel-ai",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "renik-ai",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "queen-ai",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "prometheus-ai",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "porter-family-ai",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "oracle-ai",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "nexus-ai",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "mercury-ai",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "lunascene-ai",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "lille-sc-ai",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "iris-ai",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "infrastructure",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "infinity-portal",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "guardian-ai",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "echo-ai",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "dorris-ai",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "cornelius-ai",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "chronos-ai",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "central-plexus",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "atlas-ai",
+      "riskScore": 32,
+      "isFork": false,
+      "stack": [
+        "node"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        "SECURITY.md",
+        ".github/CODEOWNERS",
+        ".github/dependabot.yml",
+        ".github/workflows/dependency-review.yml",
+        ".github/workflows/security-cve-scan.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    },
+    {
+      "repository": "trancendos-ecosystem",
+      "riskScore": 31,
+      "isFork": false,
+      "stack": [
+        "node",
+        "python",
+        "jvm",
+        "container"
+      ],
+      "defaultBranch": "main",
+      "filesPlanned": [
+        ".github/CODEOWNERS",
+        ".github/workflows/dependency-review.yml"
+      ],
+      "filesApplied": [],
+      "prUrl": null,
+      "status": "dry_run",
+      "reason": ""
+    }
+  ]
+}

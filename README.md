@@ -28,10 +28,12 @@ pnpm run audit:cve
 pnpm run check:n-1
 pnpm run audit:repos -- --owner Trancendos --limit 200
 pnpm run audit:deep -- --owner Trancendos --limit 200
+pnpm run rollout:baseline -- --owner Trancendos --min-risk-score 30
 ```
 
 - CVE scanning and compliance workflows are configured under `.github/workflows/`.
 - Portfolio-wide governance and deep-scan artifacts are generated under `reports/`.
+- Rollout execution details are documented in `docs/rollout-execution-guide.md`.
 - Dependency update automation is configured via `.github/dependabot.yml`.
 - Security response policy is documented in `SECURITY.md`.
 

@@ -196,6 +196,8 @@ Highest-priority (risk score >= 40):
 - Deep static portfolio security scanning automation (org-wide).
 - Remediation backlog generation (CSV + markdown reports).
 - Arcadia local security, CVE, N-0/N-1, and test baseline implementation.
+- Security baseline rollout orchestrator implementation (`scripts/rollout-security-baseline.mjs`).
+- First execution wave attempted against 20 non-fork high-risk repos with detailed per-repo plan output.
 
 ### Not Yet Completed
 - Bulk rollout of baseline controls to all active repositories.
@@ -203,6 +205,30 @@ Highest-priority (risk score >= 40):
 - Lockfile normalization for all package-manager roots.
 - Test baseline rollout to placeholder/skeleton repos.
 - Secret hygiene cleanup and credential rotation for flagged repositories.
+- Cross-repository write execution from this environment (blocked by token permissions).
+
+## 11) Rollout Execution Status (Current Environment)
+
+Execution evidence:
+- `reports/security-baseline-rollout.json`
+- `reports/security-baseline-rollout.md`
+- `reports/security-baseline-rollout.csv`
+- `reports/security-baseline-rollout-wave1-apply.json`
+- `reports/security-baseline-rollout-wave1-apply.md`
+- `reports/security-baseline-rollout-wave1-apply.csv`
+
+Current status:
+- Targeted repositories (wave): **20**
+- Applied: **0**
+- Permission denied: **20**
+
+Observed constraint:
+- The current automation token can read repositories across the org, but cannot create branches/PRs in sibling repositories (`HTTP 403 Resource not accessible by integration`).
+
+Next execution path:
+1. Re-run rollout with a token that has `contents:write` and `pull_requests:write`.
+2. Apply wave-by-wave (P0/P1 first, then P2).
+3. Re-run deep scan and governance scan to verify closure.
 
 ### Merge/Separate Recommendation (refined by deep scan)
 - Keep `shared-core`, `infrastructure`, integration hubs, and product apps as separate modules.

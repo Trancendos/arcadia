@@ -1,0 +1,111 @@
+name: portfolio-hardening-rollout
+
+on:
+  workflow_dispatch:
+    inputs:
+      owner:
+        description: "GitHub owner/org"
+        required: false
+        default: "Trancendos"
+      min_risk_score:
+        description: "Minimum risk score to target"
+        required: false
+        default: "30"
+      max_repos:
+        description: "Maximum repositories to process"
+        required: false
+        default: "60"
+      include_forks:
+        description: "Include forked repositories"
+        required: false
+        default: "false"
+      apply_changes:
+        description: "Apply changes (requires ORG_AUTOMATION_TOKEN secret)"
+        required: false
+        default: "false"
+      branch_name:
+        description: "Branch name for rollout PRs"
+        required: false
+        default: "security/baseline-hardening-20260222"
+
+permissions:
+  contents: read
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run deep scan
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          pnpm run audit:deep -- --owner "${{ github.event.inputs.owner || 'Trancendos' }}" --limit 200
+
+      - name: Build rollout plan
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          ARGS="--owner \"${{ github.event.inputs.owner || 'Trancendos' }}\" --min-risk-score \"${{ github.event.inputs.min_risk_score || '30' }}\" --max-repos \"${{ github.event.inputs.max_repos || '60' }}\" --branch \"${{ github.event.inputs.branch_name || 'security/baseline-hardening-20260222' }}\""
+          if [ "${{ github.event.inputs.include_forks || 'false' }}" = "true" ]; then
+            ARGS="$ARGS --include-forks"
+          fi
+          eval "pnpm run rollout:baseline -- $ARGS"
+
+      - name: Upload plan artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: portfolio-hardening-rollout-plan
+          path: reports/
+
+  apply:
+    if: ${{ github.event.inputs.apply_changes == 'true' && secrets.ORG_AUTOMATION_TOKEN != '' }}
+    needs: plan
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Execute rollout apply
+        env:
+          GH_TOKEN: ${{ secrets.ORG_AUTOMATION_TOKEN }}
+        run: |
+          ARGS="--owner \"${{ github.event.inputs.owner || 'Trancendos' }}\" --min-risk-score \"${{ github.event.inputs.min_risk_score || '30' }}\" --max-repos \"${{ github.event.inputs.max_repos || '60' }}\" --branch \"${{ github.event.inputs.branch_name || 'security/baseline-hardening-20260222' }}\" --apply"
+          if [ "${{ github.event.inputs.include_forks || 'false' }}" = "true" ]; then
+            ARGS="$ARGS --include-forks"
+          fi
+          eval "pnpm run rollout:baseline -- $ARGS"
+
+      - name: Upload apply artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: portfolio-hardening-rollout-apply-results
+          path: reports/

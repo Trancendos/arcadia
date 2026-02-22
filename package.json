@@ -13,7 +13,8 @@
     "audit:deps": "pnpm audit --prod",
     "check:n-1": "node scripts/check-n-minus-one.mjs",
     "audit:repos": "node scripts/repo-governance-audit.mjs",
-    "audit:deep": "node scripts/portfolio-deep-security-scan.mjs"
+    "audit:deep": "node scripts/portfolio-deep-security-scan.mjs",
+    "rollout:baseline": "node scripts/rollout-security-baseline.mjs"
   },
   "author": "Trancendos",
   "license": "MIT",
