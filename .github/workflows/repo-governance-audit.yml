@@ -1,0 +1,51 @@
+name: repo-governance-audit
+
+on:
+  workflow_dispatch:
+    inputs:
+      owner:
+        description: "GitHub owner/org to audit"
+        required: false
+        default: "Trancendos"
+      limit:
+        description: "Maximum repositories to evaluate"
+        required: false
+        default: "200"
+  schedule:
+    - cron: "11 1 * * 2"
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run governance audit
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          OWNER="${{ github.event.inputs.owner || 'Trancendos' }}"
+          LIMIT="${{ github.event.inputs.limit || '200' }}"
+          pnpm run audit:repos -- --owner "$OWNER" --limit "$LIMIT"
+
+      - name: Upload audit reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: repo-governance-audit-reports
+          path: reports/
