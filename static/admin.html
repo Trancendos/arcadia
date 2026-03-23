@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arcadian Exchange — Admin Dashboard</title>
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h1>⚡ Arcadian Exchange</h1>
+      <div class="subtitle">Admin • Industry 6.0</div>
+    </div>
+    <nav class="nav">
+      <div class="nav-section">
+        <div class="nav-section-title">Overview</div>
+        <a class="nav-item active" data-page="dashboard">📊 Dashboard</a>
+      </div>
+      <div class="nav-section">
+        <div class="nav-section-title">Key Management</div>
+        <a class="nav-item" data-page="keys">🔑 Private Keys</a>
+        <a class="nav-item" data-page="apikeys">🔐 API Keys</a>
+        <a class="nav-item" data-page="links">🔗 Service Links</a>
+      </div>
+      <div class="nav-section">
+        <div class="nav-section-title">Intelligence</div>
+        <a class="nav-item" data-page="services">🛡️ Services</a>
+        <a class="nav-item" data-page="nanoservices">⚡ Nanoservices</a>
+        <a class="nav-item" data-page="futureproof">🚀 Future-Proof</a>
+      </div>
+      <div class="nav-section">
+        <div class="nav-section-title">System</div>
+        <a class="nav-item" data-page="config">⚙️ Configuration</a>
+        <a class="nav-item" data-page="audit">📋 Audit Trail</a>
+      </div>
+    </nav>
+    <div style="padding:1rem;border-top:1px solid var(--border)">
+      <div style="font-size:0.65rem;color:var(--text-muted)">Trancendos 2060 Standard</div>
+      <div style="font-size:0.65rem;color:var(--text-muted)">AES-256-GCM • SHA-512 Chain</div>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main">
+    <!-- DASHBOARD -->
+    <div id="page-dashboard" class="page active">
+      <div class="page-header">
+        <h2>Admin Dashboard</h2>
+        <div class="header-actions">
+          <button class="btn btn-sm" onclick="refreshAll()">↻ Refresh</button>
+          <button class="btn btn-primary btn-sm" onclick="showModal('generate-secret-modal')">Generate Secret</button>
+        </div>
+      </div>
+      <div class="stats-grid" id="dashboard-stats"></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem">
+        <div class="card">
+          <div class="card-header"><h3>Recent Activity</h3></div>
+          <div class="card-body" id="recent-audit" style="max-height:300px;overflow-y:auto"></div>
+        </div>
+        <div class="card">
+          <div class="card-header"><h3>System Health</h3></div>
+          <div class="card-body" id="system-health"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRIVATE KEYS -->
+    <div id="page-keys" class="page">
+      <div class="page-header">
+        <h2>🔑 Private Key Management</h2>
+        <div class="header-actions">
+          <button class="btn btn-primary btn-sm" onclick="showModal('store-key-modal')">+ Store Key</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body table-wrapper">
+          <table>
+            <thead><tr>
+              <th>Name</th><th>Service</th><th>Type</th><th>Status</th>
+              <th>Fingerprint</th><th>Created</th><th>Actions</th>
+            </tr></thead>
+            <tbody id="keys-table"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- API KEYS -->
+    <div id="page-apikeys" class="page">
+      <div class="page-header">
+        <h2>🔐 API Key Management</h2>
+        <div class="header-actions">
+          <button class="btn btn-primary btn-sm" onclick="showModal('generate-apikey-modal')">+ Generate API Key</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body table-wrapper">
+          <table>
+            <thead><tr>
+              <th>Name</th><th>Service</th><th>Key Prefix</th><th>Permissions</th>
+              <th>Rate Limit</th><th>Status</th><th>Usage</th><th>Actions</th>
+            </tr></thead>
+            <tbody id="apikeys-table"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICE LINKS -->
+    <div id="page-links" class="page">
+      <div class="page-header">
+        <h2>🔗 External Service Links</h2>
+        <div class="header-actions">
+          <button class="btn btn-primary btn-sm" onclick="showModal('create-link-modal')">+ Add Service</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body table-wrapper">
+          <table>
+            <thead><tr>
+              <th>Name</th><th>Service</th><th>Base URL</th><th>Auth Type</th>
+              <th>Status</th><th>Created</th><th>Actions</th>
+            </tr></thead>
+            <tbody id="links-table"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICES -->
+    <div id="page-services" class="page">
+      <div class="page-header">
+        <h2>🛡️ Smart Services</h2>
+        <div class="header-actions">
+          <button class="btn btn-sm" onclick="loadServices()">↻ Refresh</button>
+        </div>
+      </div>
+      <div class="stats-grid" id="services-stats"></div>
+      <div class="card">
+        <div class="card-header"><h3>Health Rules</h3></div>
+        <div class="card-body table-wrapper">
+          <table>
+            <thead><tr>
+              <th>Service</th><th>Metric</th><th>Condition</th><th>Action</th>
+              <th>Triggers</th><th>Active</th>
+            </tr></thead>
+            <tbody id="health-rules-table"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- NANOSERVICES -->
+    <div id="page-nanoservices" class="page">
+      <div class="page-header">
+        <h2>⚡ Nanoservice Manifests</h2>
+      </div>
+      <div id="nano-cards" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:1rem"></div>
+    </div>
+
+    <!-- FUTURE-PROOF -->
+    <div id="page-futureproof" class="page">
+      <div class="page-header"><h2>🚀 Future-Proof Technology Adapter</h2></div>
+      <div id="futureproof-content"></div>
+    </div>
+
+    <!-- CONFIG -->
+    <div id="page-config" class="page">
+      <div class="page-header"><h2>⚙️ Platform Configuration</h2></div>
+      <div class="tabs" id="config-tabs"></div>
+      <div id="config-content"></div>
+    </div>
+
+    <!-- AUDIT -->
+    <div id="page-audit" class="page">
+      <div class="page-header">
+        <h2>📋 Audit Trail</h2>
+        <div class="header-actions">
+          <select class="form-control" style="width:auto" id="audit-filter" onchange="loadAudit()">
+            <option value="">All Actions</option>
+            <option value="key.stored">Key Stored</option>
+            <option value="key.retrieved">Key Retrieved</option>
+            <option value="key.rotated">Key Rotated</option>
+            <option value="key.revoked">Key Revoked</option>
+            <option value="key.generated">Key Generated</option>
+            <option value="link.created">Link Created</option>
+          </select>
+        </div>
+      </div>
+      <div class="card"><div class="card-body" id="audit-log"></div></div>
+    </div>
+  </main>
+</div>
+
+<!-- MODALS -->
+
+<!-- Store Key Modal -->
+<div class="modal-overlay" id="store-key-modal">
+  <div class="modal">
+    <div class="modal-header"><h3>Store Private Key / Secret</h3><button class="modal-close" onclick="hideModal('store-key-modal')">&times;</button></div>
+    <div class="modal-body">
+      <div class="form-row">
+        <div class="form-group"><label>Name</label><input class="form-control" id="sk-name" placeholder="e.g., Exchange API Secret"></div>
+        <div class="form-group"><label>Service</label><input class="form-control" id="sk-service" placeholder="e.g., binance, coinbase"></div>
+      </div>
+      <div class="form-group">
+        <label>Key Type</label>
+        <select class="form-control" id="sk-type">
+          <option value="private_key">Private Key</option>
+          <option value="api_key">API Key</option>
+          <option value="api_secret">API Secret</option>
+          <option value="jwt_secret">JWT Secret</option>
+          <option value="webhook_secret">Webhook Secret</option>
+          <option value="encryption_key">Encryption Key</option>
+          <option value="ssh_key">SSH Key</option>
+          <option value="custom">Custom</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Secret Value</label>
+        <textarea class="form-control mono" id="sk-value" rows="4" placeholder="Paste your private key or secret here…"></textarea>
+      </div>
+      <div class="form-group"><label>Description (optional)</label><input class="form-control" id="sk-desc" placeholder="What is this key used for?"></div>
+      <div class="form-group"><label>Expires At (optional)</label><input class="form-control" id="sk-expires" type="datetime-local"></div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn" onclick="hideModal('store-key-modal')">Cancel</button>
+      <button class="btn btn-primary" onclick="storeKey()">🔒 Encrypt & Store</button>
+    </div>
+  </div>
+</div>
+
+<!-- Generate API Key Modal -->
+<div class="modal-overlay" id="generate-apikey-modal">
+  <div class="modal">
+    <div class="modal-header"><h3>Generate API Key</h3><button class="modal-close" onclick="hideModal('generate-apikey-modal')">&times;</button></div>
+    <div class="modal-body">
+      <div class="form-row">
+        <div class="form-group"><label>Name</label><input class="form-control" id="ak-name" placeholder="e.g., Production API"></div>
+        <div class="form-group"><label>Service</label><input class="form-control" id="ak-service" placeholder="e.g., mobile-app, partner"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label>Rate Limit (req/min)</label><input class="form-control" id="ak-ratelimit" type="number" value="1000"></div>
+        <div class="form-group"><label>Expires In (days)</label><input class="form-control" id="ak-expires" type="number" placeholder="365"></div>
+      </div>
+      <div class="form-group"><label>Permissions</label><input class="form-control" id="ak-perms" placeholder="read, write, trade, admin (comma-separated)"></div>
+      <div class="form-group"><label>Description</label><input class="form-control" id="ak-desc" placeholder="What is this key for?"></div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn" onclick="hideModal('generate-apikey-modal')">Cancel</button>
+      <button class="btn btn-primary" onclick="generateAPIKey()">🔐 Generate Key</button>
+    </div>
+  </div>
+</div>
+
+<!-- Create Service Link Modal -->
+<div class="modal-overlay" id="create-link-modal">
+  <div class="modal">
+    <div class="modal-header"><h3>Add External Service</h3><button class="modal-close" onclick="hideModal('create-link-modal')">&times;</button></div>
+    <div class="modal-body">
+      <div class="form-row">
+        <div class="form-group"><label>Name</label><input class="form-control" id="lk-name" placeholder="e.g., CoinGecko API"></div>
+        <div class="form-group"><label>Service</label><input class="form-control" id="lk-service" placeholder="e.g., coingecko, binance"></div>
+      </div>
+      <div class="form-group"><label>Base URL</label><input class="form-control" id="lk-url" placeholder="https://api.example.com/v1"></div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Auth Type</label>
+          <select class="form-control" id="lk-authtype">
+            <option value="api_key">API Key</option>
+            <option value="bearer">Bearer Token</option>
+            <option value="basic">Basic Auth</option>
+            <option value="oauth2">OAuth2</option>
+            <option value="none">None</option>
+          </select>
+        </div>
+        <div class="form-group"><label>API Key Header</label><input class="form-control" id="lk-header" placeholder="Authorization"></div>
+      </div>
+      <div class="form-group"><label>API Key / Token (encrypted at rest)</label><input class="form-control mono" id="lk-apikey" type="password" placeholder="Your API key or token"></div>
+      <div class="form-group"><label>Description</label><input class="form-control" id="lk-desc" placeholder="Service description"></div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn" onclick="hideModal('create-link-modal')">Cancel</button>
+      <button class="btn btn-primary" onclick="createLink()">🔗 Add Service</button>
+    </div>
+  </div>
+</div>
+
+<!-- Generate Secret Modal -->
+<div class="modal-overlay" id="generate-secret-modal">
+  <div class="modal">
+    <div class="modal-header"><h3>Generate Cryptographic Secret</h3><button class="modal-close" onclick="hideModal('generate-secret-modal')">&times;</button></div>
+    <div class="modal-body">
+      <div class="form-group"><label>Length (bytes)</label><input class="form-control" id="gs-length" type="number" value="64"></div>
+      <div class="form-group"><label>Generated Secret</label><div class="code-block" id="gs-output" style="min-height:60px">Click generate to create a secret…</div></div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn" onclick="hideModal('generate-secret-modal')">Close</button>
+      <button class="btn btn-primary" onclick="generateSecret()">🎲 Generate</button>
+      <button class="btn btn-success" onclick="copySecret()">📋 Copy</button>
+    </div>
+  </div>
+</div>
+
+<!-- API Key Result Modal -->
+<div class="modal-overlay" id="apikey-result-modal">
+  <div class="modal">
+    <div class="modal-header"><h3>⚠️ API Key Generated</h3><button class="modal-close" onclick="hideModal('apikey-result-modal')">&times;</button></div>
+    <div class="modal-body">
+      <p style="color:var(--warning);font-weight:600;margin-bottom:1rem">This is the only time you will see this key. Copy it now!</p>
+      <div class="code-block" id="akr-key" style="font-size:0.9rem"></div>
+      <div style="margin-top:1rem;font-size:0.8rem;color:var(--text-muted)">
+        <div>ID: <span id="akr-id" class="tag"></span></div>
+        <div style="margin-top:0.25rem">Prefix: <span id="akr-prefix" class="tag"></span></div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-success" onclick="copyAPIKeyResult()">📋 Copy Key</button>
+      <button class="btn" onclick="hideModal('apikey-result-modal')">Done</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast-container" id="toasts"></div>
+
+<script src="js/admin.js"></script>
+</body>
+</html>

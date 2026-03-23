@@ -14,6 +14,8 @@ import morgan from 'morgan';
 import { MarketplaceEngine, ListingCategory, ListingStatus, OrderStatus, Currency } from '../marketplace/marketplace-engine';
 import { CommunityEngine, MemberRole, MemberStatus, PostCategory, PostStatus, EventType, EventStatus } from '../community/community-engine';
 import { logger } from '../utils/logger';
+import { AdminEngine } from '../admin/admin-engine';
+import { SmartServiceRegistry } from '../smart/service-registry';
 
 
 // ============================================================================
@@ -490,9 +492,9 @@ import {
 const telemetry2060 = SmartTelemetry.getInstance();
 const eventBus2060 = SmartEventBus.getInstance();
 const circuitBreaker2060 = new SmartCircuitBreaker(`${SERVICE_ID}-primary`, {
-  failureThreshold: 5,
-  resetTimeoutMs: 30000,
-  halfOpenMaxAttempts: 3,
+  threshold: 5,
+  resetTimeout: 30000,
+  halfOpenMax: 3,
 });
 
 // Wire telemetry middleware (request tracking + trace propagation)
@@ -502,20 +504,12 @@ app.use(telemetryMiddleware);
 app.use(adaptiveRateLimitMiddleware);
 
 // 2060 Enhanced health endpoint with resilience status
-app.get('/health/2060', createHealthEndpoint({
-  serviceName: SERVICE_ID,
-  meshAddress: MESH_ADDRESS,
-  getCustomHealth: () => ({
-    circuitBreaker: circuitBreaker2060.getState(),
-    eventBusListeners: eventBus2060.listenerCount(),
-    telemetryMetrics: telemetry2060.getMetricNames().length,
-  }),
-}));
+app.get('/health/2060', createHealthEndpoint(SERVICE_ID));
 
 // Prometheus text format metrics export
 app.get('/metrics/prometheus', (_req: any, res: any) => {
   res.setHeader('Content-Type', 'text/plain; version=0.0.4; charset=utf-8');
-  res.send(telemetry2060.exportPrometheus());
+  res.send(telemetry2060.toPrometheus());
 });
 
 // Emit service lifecycle events
@@ -530,6 +524,149 @@ eventBus2060.emit('service.2060.wired', {
 // END 2060 SMART RESILIENCE LAYER
 // ═══════════════════════════════════════════════════════════════════════════════
 
+// ─── Admin Engine & Smart Services ─────────────────────────────────────────
+
+const adminEngine = new AdminEngine();
+const smartRegistry = SmartServiceRegistry.getInstance();
+
+// Admin Routes
+const adminRouter = express.Router();
+
+adminRouter.get('/dashboard', async (_req: any, res: any) => {
+  res.json({ success: true, data: {
+    admin: adminEngine.getDashboardStats(),
+    smart: smartRegistry.getDashboardSummary(),
+  }});
+});
+
+adminRouter.get('/keys', async (req: any, res: any) => {
+  const { service, keyType, status } = req.query;
+  res.json({ success: true, data: adminEngine.listKeys({ service, keyType, status }) });
+});
+
+adminRouter.post('/keys', async (req: any, res: any) => {
+  const result = adminEngine.storeKey(req.body);
+  res.status(201).json({ success: true, data: result });
+});
+
+adminRouter.post('/keys/:keyId/decrypt', async (req: any, res: any) => {
+  const value = adminEngine.retrieveKey(req.params.keyId, req.body.performedBy || 'admin');
+  res.json({ success: true, data: value });
+});
+
+adminRouter.post('/keys/:keyId/revoke', async (req: any, res: any) => {
+  adminEngine.revokeKey(req.params.keyId, req.body.performedBy || 'admin');
+  res.json({ success: true, message: 'Key revoked' });
+});
+
+adminRouter.post('/keys/:keyId/rotate', async (req: any, res: any) => {
+  const result = adminEngine.rotateKey(req.params.keyId, req.body.newValue, req.body.performedBy || 'admin');
+  res.json({ success: true, data: result });
+});
+
+adminRouter.delete('/keys/:keyId', async (req: any, res: any) => {
+  adminEngine.deleteKey(req.params.keyId, req.body?.performedBy || 'admin');
+  res.json({ success: true, message: 'Key deleted' });
+});
+
+adminRouter.get('/apikeys', async (req: any, res: any) => {
+  const { service, status } = req.query;
+  res.json({ success: true, data: adminEngine.listAPIKeys({ service, status }) });
+});
+
+adminRouter.post('/apikeys/generate', async (req: any, res: any) => {
+  const result = adminEngine.generateAPIKey(req.body);
+  res.status(201).json({ success: true, data: result });
+});
+
+adminRouter.post('/apikeys/:apiKeyId/revoke', async (req: any, res: any) => {
+  adminEngine.revokeAPIKey(req.params.apiKeyId, req.body.performedBy || 'admin');
+  res.json({ success: true, message: 'API key revoked' });
+});
+
+adminRouter.get('/links', async (req: any, res: any) => {
+  const { service, status } = req.query;
+  res.json({ success: true, data: adminEngine.listServiceLinks({ service, status }) });
+});
+
+adminRouter.post('/links', async (req: any, res: any) => {
+  const result = adminEngine.createServiceLink(req.body);
+  res.status(201).json({ success: true, data: result });
+});
+
+adminRouter.delete('/links/:linkId', async (req: any, res: any) => {
+  adminEngine.deleteServiceLink(req.params.linkId, 'admin');
+  res.json({ success: true, message: 'Service link deleted' });
+});
+
+adminRouter.get('/config', async (_req: any, res: any) => {
+  res.json({ success: true, data: adminEngine.listConfigs() });
+});
+
+adminRouter.post('/config', async (req: any, res: any) => {
+  const { key, value, category, isSecret } = req.body;
+  const result = adminEngine.setConfig(key, value, category, isSecret, 'admin');
+  res.json({ success: true, data: result });
+});
+
+adminRouter.get('/audit', async (req: any, res: any) => {
+  const { action, targetType, performedBy, limit } = req.query;
+  res.json({ success: true, data: adminEngine.getAuditTrail({
+    action, targetType, performedBy,
+    limit: limit ? Number(limit) : 100,
+  })});
+});
+
+adminRouter.post('/generate-secret', async (req: any, res: any) => {
+  const secret = adminEngine.generateSecret(req.body.length || 64);
+  res.json({ success: true, data: secret });
+});
+
+// Smart Services Routes
+adminRouter.get('/smart/dashboard', async (_req: any, res: any) => {
+  res.json({ success: true, data: smartRegistry.getDashboardSummary() });
+});
+
+adminRouter.get('/smart/services', async (_req: any, res: any) => {
+  res.json({ success: true, data: smartRegistry.listServices() });
+});
+
+adminRouter.get('/smart/nanoservices', async (_req: any, res: any) => {
+  res.json({ success: true, data: smartRegistry.getNanoManifests() });
+});
+
+adminRouter.get('/smart/tech-adapter', async (_req: any, res: any) => {
+  res.json({ success: true, data: smartRegistry.getTechAdapterStatus() });
+});
+
+adminRouter.get('/smart/metrics', async (req: any, res: any) => {
+  const limit = req.query.limit ? Number(req.query.limit) : 60;
+  res.json({ success: true, data: smartRegistry.getResourceMetrics(limit) });
+});
+
+adminRouter.get('/smart/cache', async (_req: any, res: any) => {
+  res.json({ success: true, data: smartRegistry.getCacheStats() });
+});
+
+adminRouter.post('/smart/cache/clear', async (_req: any, res: any) => {
+  smartRegistry.cacheClear();
+  res.json({ success: true, message: 'Cache cleared' });
+});
+
+app.use('/api/v1/admin', adminRouter);
+
+// Register self as a service in the smart registry
+smartRegistry.register({
+  name: 'arcadia',
+  version: process.env.SERVICE_VERSION || '1.0.0',
+  endpoint: `http://${MESH_ADDRESS}:${process.env.PORT || 3030}`,
+  capabilities: ['marketplace', 'community', 'admin', 'trading', 'defi', 'nft', 'warehouse', 'compliance', 'agents', 'analytics', 'commodities'],
+  metadata: { standard: 'Industry 6.0 / Trancendos 2060' },
+});
+
+logger.info('AdminEngine initialised — secure key management active');
+logger.info('SmartServiceRegistry initialised — adaptive intelligent services active');
+
 // ── Error Handler ──────────────────────────────────────────────────────────
 
 app.use((err: Error, _req: Request, res: Response, _next: NextFunction) => {
@@ -537,4 +674,4 @@ app.use((err: Error, _req: Request, res: Response, _next: NextFunction) => {
   fail(res, err.message || 'Internal server error', 500);
 });
 
-export { app };
+export { app, adminEngine, smartRegistry };
